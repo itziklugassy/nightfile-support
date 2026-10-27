@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nightfile: serialized noir and thriller stories for iPhone</title>
+<meta name="description" content="Original dark fiction told in short chapters for late-night reading: 24 stories across 8 genres, in English and Hebrew, with illustrated interludes. First chapter free, no ads, no tracking.">
+<link rel="canonical" href="https://itziklugassy.github.io/nightfile-support/en/">
+<link rel="alternate" hreflang="he" href="https://itziklugassy.github.io/nightfile-support/">
+<link rel="alternate" hreflang="en" href="https://itziklugassy.github.io/nightfile-support/en/">
+<link rel="alternate" hreflang="x-default" href="https://itziklugassy.github.io/nightfile-support/en/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#050506">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nightfile">
+<meta property="og:title" content="Nightfile: serialized noir and thriller stories for iPhone">
+<meta property="og:description" content="Original dark fiction told in short chapters for late-night reading: 24 stories across 8 genres, in English and Hebrew, with illustrated interludes. First chapter free, no ads, no tracking.">
+<meta property="og:url" content="https://itziklugassy.github.io/nightfile-support/en/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="he_IL">
+<meta property="og:image" content="https://itziklugassy.github.io/nightfile-support/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nightfile: serialized noir stories">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nightfile: serialized noir and thriller stories for iPhone">
+<meta name="twitter:description" content="Original dark fiction told in short chapters for late-night reading: 24 stories across 8 genres, in English and Hebrew, with illustrated interludes. First chapter free, no ads, no tracking.">
+<meta name="twitter:image" content="https://itziklugassy.github.io/nightfile-support/og.png">
+<meta name="twitter:image:alt" content="Nightfile: serialized noir stories">
+<link rel="icon" href="../favicon.ico" sizes="32x32">
+<link rel="icon" href="../icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" href="../fonts/literata-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/ibm-plex-sans-hebrew-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/karantina-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Frank Ruhl Libre";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/frank-ruhl-libre-500.woff2) format("woff2")}
+@font-face{font-family:"Frank Ruhl Libre";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/frank-ruhl-libre-700.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans Hebrew";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/ibm-plex-sans-hebrew-400.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans Hebrew";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/ibm-plex-sans-hebrew-600.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/literata-400.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:400;font-style:italic;font-display:swap;src:url(../fonts/literata-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/literata-600.woff2) format("woff2")}
+@font-face{font-family:"Karantina";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/karantina-700.woff2) format("woff2")}
+*,*::before,*::after{box-sizing:border-box}
+:root{
+--bg:#050506;--ink1:#0d0e11;--ink2:#15171c;--line:#262a32;--line2:#353a45;
+--paper:#ECE6DA;--paper2:#bdb7ab;--paper3:#9a958b;--sodium:#E9A23B;--sodium-dim:rgba(233,162,59,.14);
+--sans:"IBM Plex Sans Hebrew",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+--serif-he:"Frank Ruhl Libre","Times New Roman",serif;
+--serif-en:"Literata",Georgia,"Times New Roman",serif;
+--display:var(--serif-he);
+color-scheme:dark;
+}
+html:lang(en){--display:var(--serif-en)}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth;background:var(--bg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--sans);font-size:1.0625rem;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--sodium);text-underline-offset:3px}
+a:hover{color:#f3bb62}
+:focus-visible{outline:3px solid var(--sodium);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;inset-inline-start:-9999px;top:8px;background:var(--paper);color:var(--bg);padding:8px 14px;border-radius:4px;z-index:10;font-weight:600}
+.skip:focus{inset-inline-start:12px}
+.wrap{max-width:72rem;margin:0 auto;padding:0 16px}
+@media (min-width:720px){.wrap{padding:0 32px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* header */
+.top{border-bottom:1px solid var(--line);background:rgba(5,5,6,.92);position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:60px}
+.mark{display:flex;align-items:baseline;gap:10px;color:var(--paper);text-decoration:none;margin-inline-end:auto}
+.mark b{font-family:"Karantina",var(--display);font-weight:700;font-size:1.9rem;line-height:1;letter-spacing:.02em}
+.mark b::after{content:"";display:block;height:3px;background:var(--sodium);margin-top:2px}
+.mark span{font-size:.8125rem;color:var(--paper3);letter-spacing:.06em}
+.top nav ul{display:flex;gap:4px 18px;list-style:none;margin:0;padding:0;flex-wrap:nowrap;justify-content:flex-end;white-space:nowrap}
+.mark{min-width:0;overflow:hidden}
+.top nav a{color:var(--paper2);text-decoration:none;font-size:.9375rem;padding:10px 0;display:inline-block}
+.top nav a:hover,.top nav a[aria-current]{color:var(--paper)}
+.top nav .lang a{color:var(--sodium);font-weight:600}
+@media (max-width:640px){.top nav li.opt{display:none}.mark span{display:none}}
+/* hero */
+.hero{position:relative;padding:48px 0 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:70vw;height:70vw;max-width:900px;max-height:900px;background:radial-gradient(closest-side,rgba(233,162,59,.18),rgba(233,162,59,0));pointer-events:none}
+html[dir=rtl] .hero::before{inset:-20% auto auto -10%}
+.hero .wrap{position:relative;display:grid;gap:36px;align-items:center}
+@media (min-width:900px){.hero .wrap{grid-template-columns:1.25fr .75fr;gap:56px}.hero{padding:88px 0 80px}}
+.kicker{font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sodium);margin:0 0 18px;font-weight:600}
+html:lang(he) .kicker{letter-spacing:.04em}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.15;margin:0;text-wrap:balance}
+html:lang(en) h1,html:lang(en) h2{font-weight:600;letter-spacing:-.01em}
+.hero h1{font-size:clamp(2.2rem,6.2vw,4.25rem);font-weight:700}
+html:lang(en) .hero h1{font-weight:600}
+.lede{font-size:clamp(1.0625rem,2vw,1.25rem);color:var(--paper2);max-width:36rem;margin:22px 0 30px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.store{display:inline-flex;flex-direction:column;justify-content:center;min-height:56px;padding:8px 22px;background:var(--paper);color:#0b0c0f;border-radius:10px;text-decoration:none;line-height:1.2}
+.store:hover{background:#fff;color:#0b0c0f}
+.store small{font-size:.75rem;color:#3c3b38}
+.store strong{font-size:1.0625rem}
+.ghost{display:inline-flex;align-items:center;min-height:56px;padding:0 20px;border:1px solid var(--line2);border-radius:10px;color:var(--paper);text-decoration:none}
+.ghost:hover{border-color:var(--sodium);color:var(--paper)}
+.hint{font-size:.9375rem;color:var(--paper3);margin:18px 0 0}
+.frame{position:relative;margin:0 auto;width:min(100%,360px)}
+.frame img{width:100%;aspect-ratio:4/7;object-fit:cover;border-radius:4px;border:1px solid var(--line2);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 8px var(--ink1)}
+@media (max-width:899px){.frame{width:100%}.frame img{aspect-ratio:4/3;object-position:50% 38%;box-shadow:0 20px 50px rgba(0,0,0,.6)}}
+/* facts */
+.facts{border-block:1px solid var(--line);background:var(--ink1)}
+.facts dl{display:grid;grid-template-columns:repeat(2,1fr);margin:0;padding:22px 0;gap:18px}
+@media (min-width:720px){.facts dl{grid-template-columns:repeat(4,1fr)}}
+.facts div{display:flex;flex-direction:column-reverse}
+.facts dt{color:var(--paper3);font-size:.875rem}
+.facts dd{margin:0;font-family:var(--display);font-size:2rem;line-height:1.1;color:var(--paper)}
+/* sections */
+section.band{padding:72px 0;border-bottom:1px solid var(--line)}
+@media (max-width:719px){section.band{padding:52px 0}}
+.band h2{font-size:clamp(1.75rem,4vw,2.6rem);margin-bottom:14px}
+.band .intro{color:var(--paper2);max-width:42rem;margin:0 0 34px}
+.how{display:grid;gap:22px;list-style:none;padding:0;margin:0}
+@media (min-width:720px){.how{grid-template-columns:repeat(3,1fr);align-items:start}}
+.how li{background:var(--ink1);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.how img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.how .cap{padding:16px 18px 20px}
+.how h3{font-size:1.25rem;margin-bottom:6px;color:var(--sodium)}
+.how p{margin:0;color:var(--paper2);font-size:.96875rem}
+/* shelves */
+.shelf-nav{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 40px}
+.shelf-nav a{display:inline-block;padding:8px 14px;border:1px solid var(--line2);border-radius:999px;color:var(--paper2);text-decoration:none;font-size:.9375rem}
+.shelf-nav a:hover{border-color:var(--g);color:var(--paper)}
+.shelf{margin:0 0 52px;scroll-margin-top:80px}
+.shelf:last-child{margin-bottom:0}
+.shelf-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.shelf-head h3{font-size:1.6rem;position:relative;padding-inline-start:16px}
+.shelf-head h3::before{content:"";position:absolute;inset-inline-start:0;top:.2em;bottom:.2em;width:4px;border-radius:2px;background:var(--g)}
+.shelf-head p{margin:0;color:var(--paper3);font-size:.875rem}
+.cards{display:grid;gap:18px;list-style:none;margin:0;padding:0}
+@media (min-width:700px){.cards{grid-template-columns:repeat(2,1fr);gap:26px 22px}}
+@media (min-width:1080px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start}
+@media (min-width:700px){.card{grid-template-columns:120px 1fr}}
+.cover{position:relative;aspect-ratio:2/3;border-radius:3px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(120% 70% at 50% 30%,color-mix(in srgb,var(--g) 30%,transparent),transparent 70%),#0a0b0e}
+.cover img{width:100%;height:100%;object-fit:cover}
+.cover .ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:10%;font-family:var(--display);font-size:1rem;line-height:1.15;color:var(--paper)}
+.cover .ph::before{content:attr(data-n);font-family:var(--sans);font-size:.7rem;letter-spacing:.14em;color:var(--g);margin-bottom:auto}
+.card h4{font-family:var(--display);font-weight:500;font-size:1.25rem;line-height:1.25;margin:0 0 4px}
+html:lang(en) .card h4{font-weight:600;font-size:1.125rem}
+.card .log{margin:0 0 6px;color:var(--paper2);font-size:.96875rem;line-height:1.6}
+html:lang(en) .card .log{font-family:var(--serif-en);font-style:italic;font-size:.9375rem}
+html:lang(he) .card .log{font-family:var(--serif-he);font-size:1.0625rem}
+.card .meta{margin:0;color:var(--paper3);font-size:.8125rem}
+/* pricing */
+.plans{display:grid;gap:18px;margin:0 0 26px}
+@media (min-width:720px){.plans{grid-template-columns:1fr 1fr;max-width:48rem}}
+.plan{position:relative;background:var(--ink1);border:1px solid var(--line2);border-radius:8px;padding:24px 24px 22px}
+.plan.best{border-color:var(--sodium);background:linear-gradient(180deg,var(--sodium-dim),transparent 60%),var(--ink1)}
+.plan h3{font-size:1.25rem;color:var(--paper2);font-family:var(--sans);font-weight:600}
+.plan .amt{margin:10px 0 14px;font-family:var(--display);font-size:2.6rem;line-height:1}
+.plan .amt span{font-family:var(--sans);font-size:1rem;color:var(--paper3);margin-inline-start:6px}
+.plan ul{margin:0;padding:0;list-style:none}
+.plan li{padding:4px 0;padding-inline-start:20px;position:relative;color:var(--paper2)}
+.plan li::before{content:"";position:absolute;inset-inline-start:2px;top:.75em;width:8px;height:8px;border-radius:50%;background:var(--sodium)}
+.badge{position:absolute;top:-12px;inset-inline-end:18px;background:var(--sodium);color:#140d02;font-size:.8125rem;font-weight:600;padding:2px 12px;border-radius:999px}
+.fine{color:var(--paper3);font-size:.9375rem;max-width:48rem}
+.fine p{margin:0 0 10px}
+/* privacy */
+.pillars{display:grid;gap:18px;list-style:none;margin:0 0 26px;padding:0}
+@media (min-width:720px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillars li{border-top:2px solid var(--sodium);padding-top:16px}
+.pillars h3{font-size:1.4rem;margin-bottom:6px}
+.pillars p{margin:0;color:var(--paper2)}
+.big{font-family:var(--display);font-size:clamp(1.4rem,3.4vw,2rem);margin:0 0 30px;color:var(--paper)}
+/* faq */
+.faq{max-width:48rem}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 0;padding-inline-end:36px;position:relative;font-weight:600;font-size:1.0625rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;inset-inline-end:4px;top:14px;font-size:1.5rem;line-height:1;color:var(--sodium)}
+.faq summary::after{transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+@media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
+.faq details p{margin:0 0 20px;color:var(--paper2)}
+.faq h3{font:inherit}
+/* support */
+.page-head{padding-top:56px;padding-bottom:24px}
+.page-head h1{font-size:clamp(2.2rem,6vw,3.5rem);font-weight:700}
+.page-head p{color:var(--paper2);max-width:42rem;margin:16px 0 0;font-size:1.125rem}
+.grid2{display:grid;gap:18px;padding-bottom:64px}
+@media (min-width:860px){.grid2{grid-template-columns:1fr 1fr}}
+.box{background:var(--ink1);border:1px solid var(--line);border-radius:8px;padding:22px 22px 18px;scroll-margin-top:80px}
+.box.wide{grid-column:1/-1}
+.box h2{font-size:1.5rem;margin:0 0 12px}
+.box p,.box li{color:var(--paper2)}
+.box p{margin:0 0 12px}
+.box ol,.box ul{margin:0 0 12px;padding-inline-start:1.3em}
+.box li{margin-bottom:6px}
+.box li::marker{color:var(--sodium)}
+.box strong{color:var(--paper)}
+.box dl{margin:0 0 12px;display:grid;grid-template-columns:auto 1fr;gap:8px 18px}
+.box dt{color:var(--paper3)}
+.box dd{margin:0;color:var(--paper)}
+@media (max-width:480px){.box dl{grid-template-columns:1fr;gap:2px}.box dd{margin-bottom:10px}}
+/* footer */
+footer.site{padding:44px 0 56px;color:var(--paper3);font-size:.875rem}
+footer.site ul{display:flex;flex-wrap:wrap;gap:6px 22px;list-style:none;padding:0;margin:0 0 20px}
+footer.site a{color:var(--paper2)}
+footer.site a:hover{color:var(--sodium)}
+footer.site p{margin:0 0 6px}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://itziklugassy.github.io/nightfile-support/#app",
+   "name": "Nightfile",
+   "alternateName": "אחרי חצות",
+   "description": "Original dark fiction told in short chapters for late-night reading: 24 stories across 8 genres, in English and Hebrew, with illustrated interludes. First chapter free, no ads, no tracking.",
+   "url": "https://itziklugassy.github.io/nightfile-support/en/",
+   "image": "https://itziklugassy.github.io/nightfile-support/og.png",
+   "operatingSystem": "iOS",
+   "applicationCategory": "BookApplication",
+   "applicationSubCategory": "Interactive fiction",
+   "contentRating": "16+",
+   "inLanguage": [
+    "he",
+    "en"
+   ],
+   "isAccessibleForFree": false,
+   "softwareVersion": "1.0",
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Free first chapter",
+     "price": "0",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Monthly",
+     "price": "8.99",
+     "priceCurrency": "USD",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "US"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "8.99",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "MON"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Annual",
+     "price": "49.99",
+     "priceCurrency": "USD",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "US"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "49.99",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "ANN"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Monthly",
+     "price": "34.90",
+     "priceCurrency": "ILS",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "IL"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "34.90",
+      "priceCurrency": "ILS",
+      "billingDuration": 1,
+      "unitCode": "MON"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Annual",
+     "price": "249.00",
+     "priceCurrency": "ILS",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "IL"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "249.00",
+      "priceCurrency": "ILS",
+      "billingDuration": 1,
+      "unitCode": "ANN"
+     }
+    }
+   ],
+   "publisher": {
+    "@id": "https://itziklugassy.github.io/nightfile-support/#org"
+   },
+   "author": {
+    "@id": "https://itziklugassy.github.io/nightfile-support/#org"
+   },
+   "accessibilityFeature": [
+    "largePrint",
+    "highContrastDisplay",
+    "displayTransformability",
+    "alternativeText",
+    "readingOrder"
+   ],
+   "accessibilityHazard": "none",
+   "accessibilityControl": [
+    "fullTouchControl"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://itziklugassy.github.io/nightfile-support/#org",
+   "name": "DIGITAL LAB",
+   "url": "https://itziklugassy.github.io/nightfile-support/",
+   "logo": "https://itziklugassy.github.io/nightfile-support/icon-512.png",
+   "email": "bestoftbest.service@gmail.com",
+   "telephone": "+972-52-344-5266",
+   "founder": {
+    "@type": "Person",
+    "name": "Itzik Lugassy",
+    "alternateName": "איציק לוגאסי"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Trumpeldor 1",
+    "addressLocality": "Tel Aviv",
+    "addressCountry": "IL"
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "customer support",
+     "email": "bestoftbest.service@gmail.com",
+     "telephone": "+972-52-344-5266",
+     "availableLanguage": [
+      "he",
+      "en"
+     ],
+     "url": "https://itziklugassy.github.io/nightfile-support/en/support.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://itziklugassy.github.io/nightfile-support/en/#faq",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What is Nightfile?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nightfile (in Hebrew, אחרי חצות) is an iPhone and iPad app of 24 original dark stories told in short chapters, in English and Hebrew, with illustrated interludes between chapters."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Nightfile free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The first chapter of one story is free; everything else needs a subscription: $8.99 a month or $49.99 a year in the U.S. (₪34.90 or ₪249 in Israel), and the annual plan starts with a 7-day free trial."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I cancel my subscription?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On iPhone or iPad go to Settings > your name > Subscriptions > Nightfile > Cancel Subscription at least 24 hours before renewal; you can also email us to cancel."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the age rating?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nightfile is rated 16+ because the stories include mature themes, suspense, horror and non-graphic violence; there is no sexual content."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which languages are available?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "All 24 stories are available in English and in Hebrew, and you can switch languages at any time in the app's Settings."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I read offline?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The launch stories are built into the app, so you can read on a plane or anywhere without signal; buying or restoring a subscription needs a connection."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What do you know about me?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Almost nothing: there is no account, no ads and no tracking, and your reading progress stays on your device; RevenueCat receives an anonymous ID and purchase data, not linked to your identity, to manage the subscription and produce aggregate subscription metrics."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Nightfile accessible?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. It fully supports VoiceOver, Dynamic Type, Reduce Motion and high-contrast text, and every illustrated panel has a text description; the Accessibility Statement lists known limitations."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do new stories arrive?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We add new chapters and stories over time through app updates, and release dates are shown in the app; there is no fixed schedule."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I restore my subscription on a new device?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sign in with the same Apple Account, open the app and tap \"Restore Purchases\" on the subscription screen or in Settings."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://itziklugassy.github.io/nightfile-support/#site",
+   "url": "https://itziklugassy.github.io/nightfile-support/",
+   "name": "Nightfile",
+   "alternateName": "אחרי חצות",
+   "inLanguage": [
+    "he",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://itziklugassy.github.io/nightfile-support/#org"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="mark" href="./" aria-label="Nightfile, Home"><b>NIGHTFILE</b><span lang="he">אחרי חצות</span></a>
+<nav aria-label="Main navigation"><ul><li><a href="#stories">Stories</a></li><li class="opt"><a href="#pricing">Pricing</a></li><li class="opt"><a href="#faq">FAQ</a></li><li><a href="support.html">Support</a></li><li class="lang"><a href="../" lang="he" hreflang="he">עברית</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap">
+<div>
+<p class="kicker">Serialized noir · English &amp; Hebrew · 16+</p>
+<h1 id="h1">Dark stories in short chapters, made for after midnight.</h1>
+<p class="lede">24 original stories across eight shadowy genres. Each chapter takes about ten minutes, and an illustrated interlude waits between chapters to pull you onward.</p>
+<div class="ctas">
+<a class="store" href="https://apps.apple.com/" data-appstore-link data-todo="TODO: replace href with the Nightfile App Store URL after App Review approval, and replace this button with Apple&#x27;s official Download on the App Store badge"><small>For iPhone and iPad</small><strong>Download on the App Store</strong></a>
+<a class="ghost" href="#stories">Browse the stories</a>
+</div>
+<p class="hint">First chapter free. $8.99 a month, or $49.99 a year with a 7-day free trial.</p>
+</div>
+<div class="frame"><img src="../img/hero-pawn.webp" width="640" height="1120" alt="Noir illustration: a man in a hat and long coat stands outside a lit shop window on a rain-wet street at night, under glowing streetlamps." fetchpriority="high" decoding="async"></div>
+</div></section>
+<div class="facts"><div class="wrap"><dl><div><dt>original stories</dt><dd>24</dd></div><div><dt>genres</dt><dd>8</dd></div><div><dt>minutes a chapter</dt><dd>~10</dd></div><div><dt>languages: English and Hebrew</dt><dd>2</dd></div></dl></div></div>
+<section class="band" aria-labelledby="how-h"><div class="wrap">
+<h2 id="how-h">How it reads</h2>
+<p class="intro">Clean text in the size and typeface you choose, with three night-friendly color themes. At the end of each chapter, a few illustrated panels with narrator captions, then the next chapter.</p>
+<ul class="how"><li><img src="../img/pawn-c1-p1.webp" width="480" height="657" alt="Illustrated panel: a security monitor in a dark pawnshop shows a man in a hat at the counter, beside a desk lamp and a coffee cup." loading="lazy" decoding="async"><div class="cap"><h3>Chapter</h3><p>Read a ten-minute chapter. Your place is saved automatically.</p></div></li><li><img src="../img/pawn-c1-p2.webp" width="480" height="480" alt="Illustrated panel: two weathered hands hold up a gold wedding ring with an engraving inside." loading="lazy" decoding="async"><div class="cap"><h3>Interlude</h3><p>Illustrated panels with narrator captions. You decide when to move on.</p></div></li><li><img src="../img/pawn-c1-p3.webp" width="480" height="840" alt="Illustrated panel: a man in a long coat reaches for the door of a lit shop on a rain-soaked street." loading="lazy" decoding="async"><div class="cap"><h3>Next chapter</h3><p>Keep going, even without an internet connection.</p></div></li></ul>
+</div></section>
+<section class="band" id="stories" aria-labelledby="stories-h"><div class="wrap">
+<h2 id="stories-h">Eight shelves, 24 stories</h2>
+<p class="intro">Every story is a complete arc of 6 to 8 chapters. Pick a shelf:</p>
+<ul class="shelf-nav"><li><a href="#shelf-noir" style="--g:#E9A23B">Noir &amp; Crime</a></li><li><a href="#shelf-psych" style="--g:#7FC4D6">Psychological Thriller</a></li><li><a href="#shelf-detective" style="--g:#D9C27A">Detective Mystery</a></li><li><a href="#shelf-horror" style="--g:#E8806F">Supernatural Horror</a></li><li><a href="#shelf-spy" style="--g:#5FB8A6">Espionage</a></li><li><a href="#shelf-dystopia" style="--g:#A9CF54">Dystopia</a></li><li><a href="#shelf-romance" style="--g:#D77A93">Dark Romance</a></li><li><a href="#shelf-files" style="--g:#8EA6E8">Found Files</a></li></ul>
+<section class="shelf" id="shelf-noir" style="--g:#E9A23B" aria-labelledby="sh-noir">
+<div class="shelf-head"><h3 id="sh-noir">Noir &amp; Crime</h3><p>Content notes: Non-graphic violence, death, crime, suspense</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="../img/pawn.webp" width="400" height="600" alt="Cover art for Night Pawn" loading="lazy" decoding="async"></div><div><h4>Night Pawn</h4><p class="log">At 3 a.m. a stranger pawns a wedding ring. Abner buried it with his wife three years ago.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="03" aria-hidden="true">The Meter</span></div><div><h4>The Meter</h4><p class="log">Every night at 2:14 a silent passenger rides Doug&#x27;s cab to the same corner. One night she leaves him a receipt from the worst night of his life.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="02" aria-hidden="true">Dry Clean Only</span></div><div><h4>Dry Clean Only</h4><p class="log">Twenty years after three witnesses sent her husband to prison, each of them brings Ruth a coat with the same black handprint on the shoulder.</p><p class="meta">7 chapters</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-psych" style="--g:#7FC4D6" aria-labelledby="sh-psych">
+<div class="shelf-head"><h3 id="sh-psych">Psychological Thriller</h3><p>Content notes: Psychological suspense, manipulation, emotional distress</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="06" aria-hidden="true">Out of Office</span></div><div><h4>Out of Office</h4><p class="log">Michael gets an out-of-office reply from his own address: Don&#x27;t try to find me. He never wrote it.</p><p class="meta">7 chapters</p></div></article></li><li><article class="card"><div class="cover"><img src="../img/diary.webp" width="400" height="600" alt="Cover art for Thirty-One Days" loading="lazy" decoding="async"></div><div><h4>Thirty-One Days</h4><p class="log">Every morning Noa finds a diary page on her doormat, in her own handwriting, dated tomorrow. Then it happens.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="05" aria-hidden="true">The Extra Window</span></div><div><h4>The Extra Window</h4><p class="log">After the accident Anna remembers five rooms in her studio. She comes home to four, and a fiancé who says there were always four.</p><p class="meta">7 chapters</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-detective" style="--g:#D9C27A" aria-labelledby="sh-detective">
+<div class="shelf-head"><h3 id="sh-detective">Detective Mystery</h3><p>Content notes: Death, off-page murder, suspense</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="../img/room.webp" width="400" height="600" alt="Cover art for The Eighth Room" loading="lazy" decoding="async"></div><div><h4>The Eighth Room</h4><p class="log">A storm, a blackout, an inn above the sea. At 1 a.m. Judith sees a stranger on the stairs. By morning everyone swears no one came.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="09" aria-hidden="true">Lost and Found</span></div><div><h4>Lost and Found</h4><p class="log">In the station&#x27;s lost-property box, a recorder still running: two voices planning a murder for Friday, 11:40 p.m., by Track 11.</p><p class="meta">7 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="08" aria-hidden="true">The Last Crossword</span></div><div><h4>The Last Crossword</h4><p class="log">The puzzle king&#x27;s last crossword reads like an attendance sheet for the night he died. The answer across the middle is his daughter&#x27;s name.</p><p class="meta">8 chapters</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-horror" style="--g:#E8806F" aria-labelledby="sh-horror">
+<div class="shelf-head"><h3 id="sh-horror">Supernatural Horror</h3><p>Content notes: Supernatural horror, death, grief, frightening imagery</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="12" aria-hidden="true">Room Tone</span></div><div><h4>Room Tone</h4><p class="log">Ronnie records a minute of silence in an empty house. On playback: dishes, laughter, and a girl calling her name.</p><p class="meta">6 chapters</p></div></article></li><li><article class="card"><div class="cover"><img src="../img/tide.webp" width="400" height="600" alt="Cover art for Low Tide" loading="lazy" decoding="async"></div><div><h4>Low Tide</h4><p class="log">The sea pulls back a mile and leaves a church bell standing on the sand. It rings only when Lia comes near.</p><p class="meta">7 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="11" aria-hidden="true">The Choir</span></div><div><h4>The Choir</h4><p class="log">Jordan joins the town choir. After every rehearsal, someone in town forgets someone they love.</p><p class="meta">7 chapters</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-spy" style="--g:#5FB8A6" aria-labelledby="sh-spy">
+<div class="shelf-head"><h3 id="sh-spy">Espionage</h3><p>Content notes: Non-graphic violence, betrayal, suspense</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="15" aria-hidden="true">Under the Crown</span></div><div><h4>Under the Crown</h4><p class="log">Lena is a dentist, a wife, a mother, and for twenty years a sleeper waiting for one name. On Monday it shows up in her appointment book.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="14" aria-hidden="true">Three-Second Delay</span></div><div><h4>Three-Second Delay</h4><p class="log">A protected witness slips phrases into his testimony that only his interpreter understands: the secret language her father invented for her.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><img src="../img/letter.webp" width="400" height="600" alt="Cover art for Dead Letter" loading="lazy" decoding="async"></div><div><h4>Dead Letter</h4><p class="log">For eleven years Hannah has mailed coded postcards to her handler, and his orders keep coming back. Then she learns he died eight days after they met.</p><p class="meta">8 chapters</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-dystopia" style="--g:#A9CF54" aria-labelledby="sh-dystopia">
+<div class="shelf-head"><h3 id="sh-dystopia">Dystopia</h3><p>Content notes: Oppression and control, distress, non-graphic violence</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="17" aria-hidden="true">Watch the Hook</span></div><div><h4>Watch the Hook</h4><p class="log">Ingrid rents out her nights and sleeps through them. One morning she wakes with a bruised knuckle and laces tied in a knot she doesn&#x27;t know.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><img src="../img/quiet.webp" width="400" height="600" alt="Cover art for Quiet Hours" loading="lazy" decoding="async"></div><div><h4>Quiet Hours</h4><p class="log">In a city where speech is metered by the minute, Rona saves 47 minutes to testify for her neighbor. Overnight, someone buys them all.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="18" aria-hidden="true">Full Levy</span></div><div><h4>Full Levy</h4><p class="log">Taxes are paid in memories. Bettina audits a man who remembers only the last thirty days, and someone has paid his levy for thirteen years.</p><p class="meta">7 chapters</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-romance" style="--g:#D77A93" aria-labelledby="sh-romance">
+<div class="shelf-head"><h3 id="sh-romance">Dark Romance</h3><p>Content notes: Abusive relationships, threats, non-graphic violence</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="../img/signature.webp" width="400" height="600" alt="Cover art for Second Signature" loading="lazy" decoding="async"></div><div><h4>Second Signature</h4><p class="log">On their wedding night, at 12:38, Ada watches her husband forge her signature. She has known for a year. She married him to find out why.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="21" aria-hidden="true">One Song, Please</span></div><div><h4>One Song, Please</h4><p class="log">Her father sends Lila to play piano in his enemy&#x27;s club and steal a deed from the safe. On her first night, the owner hums her mother&#x27;s lullaby.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="20" aria-hidden="true">Wrong Address</span></div><div><h4>Wrong Address</h4><p class="log">Letter 14 from a stranger, to a woman who vanished, lands in Paige&#x27;s mailbox. At 3 a.m. she answers as her. Minutes later, letters 1 to 13 are on her doormat.</p><p class="meta">7 chapters</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-files" style="--g:#8EA6E8" aria-labelledby="sh-files">
+<div class="shelf-head"><h3 id="sh-files">Found Files</h3><p>Content notes: Death, disappearance, trauma, suspense</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="../img/tapes.webp" width="400" height="600" alt="Cover art for What Stays in Storage" loading="lazy" decoding="async"></div><div><h4>What Stays in Storage</h4><p class="log">A podcaster buys an abandoned storage unit in the town she&#x27;s from but never visits. Inside: fourteen unlabeled tapes, and a woman confessing to a burial no one knew about.</p><p class="meta">8 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="23" aria-hidden="true">The Camp File</span></div><div><h4>The Camp File</h4><p class="log">Thirty years ago, the night a camp boathouse burned, a counselor walked into the woods and was never seen again. Now the file is reopened, one document at a time.</p><p class="meta">7 chapters</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="24" aria-hidden="true">Comments</span></div><div><h4>Comments</h4><p class="log">Twenty years after a teenager&#x27;s death, a true-crime forum reopens the case. A new user knows details nobody published.</p><p class="meta">7 chapters</p></div></article></li></ul>
+</section>
+</div></section>
+<section class="band" id="pricing" aria-labelledby="pricing-h"><div class="wrap">
+<h2 id="pricing-h">Pricing</h2>
+<p class="intro">One subscription unlocks every story and chapter, including new chapters as they are released.</p>
+<div class="plans"><div class="plan best"><span class="badge">Best value</span><h3>Annual</h3><p class="amt"><bdi>$49.99</bdi><span>per year</span></p><ul><li>7-day free trial</li><li>About $4.17 a month</li><li>Billed yearly when the trial ends</li></ul></div><div class="plan"><h3>Monthly</h3><p class="amt"><bdi>$8.99</bdi><span>per month</span></p><ul><li>No commitment</li><li>Billed monthly</li><li>Cancel anytime</li></ul></div></div>
+<div class="fine"><p>U.S. prices plus applicable sales tax. In Israel: ₪249 a year or ₪34.90 a month, VAT included. Elsewhere the price follows Apple&#x27;s price tiers and is shown in your currency.</p><p>The subscription renews automatically until you cancel. To avoid a charge, cancel in your Apple Account settings at least 24 hours before the current period or trial ends.</p><p>Family Sharing is supported, and the subscription works on every device signed in with the same Apple Account.</p><p>Full terms: <a href="../terms-of-use-en.html#t9">Terms of Use, Section 9</a>.</p></div>
+</div></section>
+<section class="band" id="privacy" aria-labelledby="privacy-h"><div class="wrap">
+<h2 id="privacy-h">Privacy first</h2>
+<p class="big">No ads. No tracking. No account.</p>
+<ul class="pillars"><li><h3>No ads</h3><p>There are no ads in the app, and it never reads your device&#x27;s advertising identifier.</p></li><li><h3>No tracking</h3><p>No analytics tools, no cookies, no pixels, on this website too. Nothing is used for tracking.</p></li><li><h3>No account</h3><p>Nothing to sign up for. Reading progress and settings stay on your device.</p></li></ul>
+<div class="fine"><p>Only an anonymous ID and purchase data, not linked to your identity, go to RevenueCat to manage the subscription and produce aggregate subscription metrics. Details in the <a href="../privacy-policy-en.html">Privacy Policy</a>.</p></div>
+</div></section>
+<section class="band" id="accessibility" aria-labelledby="a11y-h"><div class="wrap">
+<h2 id="a11y-h">Accessibility</h2>
+<p class="intro">VoiceOver in English and Hebrew, Dynamic Type including the larger accessibility sizes, Reduce Motion, text contrast of at least 4.5:1 and 44-point touch targets. Target: WCAG 2.0 level AA (Israeli Standard 5568).</p>
+<div class="fine"><p>Read the full <a href="../accessibility-statement-en.html">Accessibility Statement</a>, including known limitations and how to reach us.</p></div>
+</div></section>
+<section class="band" id="faq" aria-labelledby="faq-h"><div class="wrap">
+<h2 id="faq-h">Frequently asked questions</h2>
+<div class="faq"><details><summary><h3>What is Nightfile?</h3></summary><p>Nightfile (in Hebrew, אחרי חצות) is an iPhone and iPad app of 24 original dark stories told in short chapters, in English and Hebrew, with illustrated interludes between chapters.</p></details><details><summary><h3>Is Nightfile free?</h3></summary><p>The first chapter of one story is free; everything else needs a subscription: $8.99 a month or $49.99 a year in the U.S. (₪34.90 or ₪249 in Israel), and the annual plan starts with a 7-day free trial.</p></details><details><summary><h3>How do I cancel my subscription?</h3></summary><p>On iPhone or iPad go to Settings &gt; your name &gt; Subscriptions &gt; Nightfile &gt; Cancel Subscription at least 24 hours before renewal; you can also email us to cancel.</p></details><details><summary><h3>What is the age rating?</h3></summary><p>Nightfile is rated 16+ because the stories include mature themes, suspense, horror and non-graphic violence; there is no sexual content.</p></details><details><summary><h3>Which languages are available?</h3></summary><p>All 24 stories are available in English and in Hebrew, and you can switch languages at any time in the app&#x27;s Settings.</p></details><details><summary><h3>Can I read offline?</h3></summary><p>Yes. The launch stories are built into the app, so you can read on a plane or anywhere without signal; buying or restoring a subscription needs a connection.</p></details><details><summary><h3>What do you know about me?</h3></summary><p>Almost nothing: there is no account, no ads and no tracking, and your reading progress stays on your device; RevenueCat receives an anonymous ID and purchase data, not linked to your identity, to manage the subscription and produce aggregate subscription metrics.</p></details><details><summary><h3>Is Nightfile accessible?</h3></summary><p>Yes. It fully supports VoiceOver, Dynamic Type, Reduce Motion and high-contrast text, and every illustrated panel has a text description; the Accessibility Statement lists known limitations.</p></details><details><summary><h3>How do new stories arrive?</h3></summary><p>We add new chapters and stories over time through app updates, and release dates are shown in the app; there is no fixed schedule.</p></details><details><summary><h3>How do I restore my subscription on a new device?</h3></summary><p>Sign in with the same Apple Account, open the app and tap &quot;Restore Purchases&quot; on the subscription screen or in Settings.</p></details></div>
+<div class="fine"><p style="margin-top:24px">More help on the <a href="support.html">Support page</a>.</p></div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<nav aria-label="Links"><ul><li><a href="../privacy-policy-en.html">Privacy Policy</a></li><li><a href="../terms-of-use-en.html">Terms of Use</a></li><li><a href="../accessibility-statement-en.html">Accessibility</a></li><li><a href="support.html">Support</a></li><li><a href="./">Home</a></li><li><a href="../" lang="he" hreflang="he">עברית</a></li></ul></nav>
+<p>DIGITAL LAB · Itzik Lugassy, sole trader, Israeli business no. 301704373 · Trumpeldor 1, Tel Aviv, Israel · <a href="mailto:bestoftbest.service@gmail.com">bestoftbest.service@gmail.com</a></p>
+<p>© 2026 Nightfile. All rights reserved. Apple, App Store, iPhone and iPad are trademarks of Apple Inc.</p>
+<p>This site uses no cookies, analytics or tracking, and loads nothing from third parties.</p>
+</div></footer>
+</body>
+</html>

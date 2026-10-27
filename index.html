@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>אחרי חצות (Nightfile): סיפורי נואר ומתח בפרקים לאייפון</title>
+<meta name="description" content="אפליקציית סיפורי מקור בפרקים קצרים לקריאה בלילה: 24 סיפורים בשמונה ז&#x27;אנרים, בעברית ובאנגלית, עם מעברים מאוירים. פרק ראשון חינם, בלי פרסומות ובלי מעקב.">
+<link rel="canonical" href="https://itziklugassy.github.io/nightfile-support/">
+<link rel="alternate" hreflang="he" href="https://itziklugassy.github.io/nightfile-support/">
+<link rel="alternate" hreflang="en" href="https://itziklugassy.github.io/nightfile-support/en/">
+<link rel="alternate" hreflang="x-default" href="https://itziklugassy.github.io/nightfile-support/en/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#050506">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="אחרי חצות">
+<meta property="og:title" content="אחרי חצות (Nightfile): סיפורי נואר ומתח בפרקים לאייפון">
+<meta property="og:description" content="אפליקציית סיפורי מקור בפרקים קצרים לקריאה בלילה: 24 סיפורים בשמונה ז&#x27;אנרים, בעברית ובאנגלית, עם מעברים מאוירים. פרק ראשון חינם, בלי פרסומות ובלי מעקב.">
+<meta property="og:url" content="https://itziklugassy.github.io/nightfile-support/">
+<meta property="og:locale" content="he_IL">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://itziklugassy.github.io/nightfile-support/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="אחרי חצות (Nightfile): סיפורי נואר בפרקים">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="אחרי חצות (Nightfile): סיפורי נואר ומתח בפרקים לאייפון">
+<meta name="twitter:description" content="אפליקציית סיפורי מקור בפרקים קצרים לקריאה בלילה: 24 סיפורים בשמונה ז&#x27;אנרים, בעברית ובאנגלית, עם מעברים מאוירים. פרק ראשון חינם, בלי פרסומות ובלי מעקב.">
+<meta name="twitter:image" content="https://itziklugassy.github.io/nightfile-support/og.png">
+<meta name="twitter:image:alt" content="אחרי חצות (Nightfile): סיפורי נואר בפרקים">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/frank-ruhl-libre-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ibm-plex-sans-hebrew-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/karantina-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Frank Ruhl Libre";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/frank-ruhl-libre-500.woff2) format("woff2")}
+@font-face{font-family:"Frank Ruhl Libre";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/frank-ruhl-libre-700.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans Hebrew";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/ibm-plex-sans-hebrew-400.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans Hebrew";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/ibm-plex-sans-hebrew-600.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/literata-400.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:400;font-style:italic;font-display:swap;src:url(fonts/literata-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/literata-600.woff2) format("woff2")}
+@font-face{font-family:"Karantina";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/karantina-700.woff2) format("woff2")}
+*,*::before,*::after{box-sizing:border-box}
+:root{
+--bg:#050506;--ink1:#0d0e11;--ink2:#15171c;--line:#262a32;--line2:#353a45;
+--paper:#ECE6DA;--paper2:#bdb7ab;--paper3:#9a958b;--sodium:#E9A23B;--sodium-dim:rgba(233,162,59,.14);
+--sans:"IBM Plex Sans Hebrew",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+--serif-he:"Frank Ruhl Libre","Times New Roman",serif;
+--serif-en:"Literata",Georgia,"Times New Roman",serif;
+--display:var(--serif-he);
+color-scheme:dark;
+}
+html:lang(en){--display:var(--serif-en)}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth;background:var(--bg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--paper);font-family:var(--sans);font-size:1.0625rem;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--sodium);text-underline-offset:3px}
+a:hover{color:#f3bb62}
+:focus-visible{outline:3px solid var(--sodium);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;inset-inline-start:-9999px;top:8px;background:var(--paper);color:var(--bg);padding:8px 14px;border-radius:4px;z-index:10;font-weight:600}
+.skip:focus{inset-inline-start:12px}
+.wrap{max-width:72rem;margin:0 auto;padding:0 16px}
+@media (min-width:720px){.wrap{padding:0 32px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* header */
+.top{border-bottom:1px solid var(--line);background:rgba(5,5,6,.92);position:sticky;top:0;z-index:5}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:60px}
+.mark{display:flex;align-items:baseline;gap:10px;color:var(--paper);text-decoration:none;margin-inline-end:auto}
+.mark b{font-family:"Karantina",var(--display);font-weight:700;font-size:1.9rem;line-height:1;letter-spacing:.02em}
+.mark b::after{content:"";display:block;height:3px;background:var(--sodium);margin-top:2px}
+.mark span{font-size:.8125rem;color:var(--paper3);letter-spacing:.06em}
+.top nav ul{display:flex;gap:4px 18px;list-style:none;margin:0;padding:0;flex-wrap:nowrap;justify-content:flex-end;white-space:nowrap}
+.mark{min-width:0;overflow:hidden}
+.top nav a{color:var(--paper2);text-decoration:none;font-size:.9375rem;padding:10px 0;display:inline-block}
+.top nav a:hover,.top nav a[aria-current]{color:var(--paper)}
+.top nav .lang a{color:var(--sodium);font-weight:600}
+@media (max-width:640px){.top nav li.opt{display:none}.mark span{display:none}}
+/* hero */
+.hero{position:relative;padding:48px 0 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:70vw;height:70vw;max-width:900px;max-height:900px;background:radial-gradient(closest-side,rgba(233,162,59,.18),rgba(233,162,59,0));pointer-events:none}
+html[dir=rtl] .hero::before{inset:-20% auto auto -10%}
+.hero .wrap{position:relative;display:grid;gap:36px;align-items:center}
+@media (min-width:900px){.hero .wrap{grid-template-columns:1.25fr .75fr;gap:56px}.hero{padding:88px 0 80px}}
+.kicker{font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sodium);margin:0 0 18px;font-weight:600}
+html:lang(he) .kicker{letter-spacing:.04em}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.15;margin:0;text-wrap:balance}
+html:lang(en) h1,html:lang(en) h2{font-weight:600;letter-spacing:-.01em}
+.hero h1{font-size:clamp(2.2rem,6.2vw,4.25rem);font-weight:700}
+html:lang(en) .hero h1{font-weight:600}
+.lede{font-size:clamp(1.0625rem,2vw,1.25rem);color:var(--paper2);max-width:36rem;margin:22px 0 30px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.store{display:inline-flex;flex-direction:column;justify-content:center;min-height:56px;padding:8px 22px;background:var(--paper);color:#0b0c0f;border-radius:10px;text-decoration:none;line-height:1.2}
+.store:hover{background:#fff;color:#0b0c0f}
+.store small{font-size:.75rem;color:#3c3b38}
+.store strong{font-size:1.0625rem}
+.ghost{display:inline-flex;align-items:center;min-height:56px;padding:0 20px;border:1px solid var(--line2);border-radius:10px;color:var(--paper);text-decoration:none}
+.ghost:hover{border-color:var(--sodium);color:var(--paper)}
+.hint{font-size:.9375rem;color:var(--paper3);margin:18px 0 0}
+.frame{position:relative;margin:0 auto;width:min(100%,360px)}
+.frame img{width:100%;aspect-ratio:4/7;object-fit:cover;border-radius:4px;border:1px solid var(--line2);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 8px var(--ink1)}
+@media (max-width:899px){.frame{width:100%}.frame img{aspect-ratio:4/3;object-position:50% 38%;box-shadow:0 20px 50px rgba(0,0,0,.6)}}
+/* facts */
+.facts{border-block:1px solid var(--line);background:var(--ink1)}
+.facts dl{display:grid;grid-template-columns:repeat(2,1fr);margin:0;padding:22px 0;gap:18px}
+@media (min-width:720px){.facts dl{grid-template-columns:repeat(4,1fr)}}
+.facts div{display:flex;flex-direction:column-reverse}
+.facts dt{color:var(--paper3);font-size:.875rem}
+.facts dd{margin:0;font-family:var(--display);font-size:2rem;line-height:1.1;color:var(--paper)}
+/* sections */
+section.band{padding:72px 0;border-bottom:1px solid var(--line)}
+@media (max-width:719px){section.band{padding:52px 0}}
+.band h2{font-size:clamp(1.75rem,4vw,2.6rem);margin-bottom:14px}
+.band .intro{color:var(--paper2);max-width:42rem;margin:0 0 34px}
+.how{display:grid;gap:22px;list-style:none;padding:0;margin:0}
+@media (min-width:720px){.how{grid-template-columns:repeat(3,1fr);align-items:start}}
+.how li{background:var(--ink1);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.how img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.how .cap{padding:16px 18px 20px}
+.how h3{font-size:1.25rem;margin-bottom:6px;color:var(--sodium)}
+.how p{margin:0;color:var(--paper2);font-size:.96875rem}
+/* shelves */
+.shelf-nav{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 40px}
+.shelf-nav a{display:inline-block;padding:8px 14px;border:1px solid var(--line2);border-radius:999px;color:var(--paper2);text-decoration:none;font-size:.9375rem}
+.shelf-nav a:hover{border-color:var(--g);color:var(--paper)}
+.shelf{margin:0 0 52px;scroll-margin-top:80px}
+.shelf:last-child{margin-bottom:0}
+.shelf-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.shelf-head h3{font-size:1.6rem;position:relative;padding-inline-start:16px}
+.shelf-head h3::before{content:"";position:absolute;inset-inline-start:0;top:.2em;bottom:.2em;width:4px;border-radius:2px;background:var(--g)}
+.shelf-head p{margin:0;color:var(--paper3);font-size:.875rem}
+.cards{display:grid;gap:18px;list-style:none;margin:0;padding:0}
+@media (min-width:700px){.cards{grid-template-columns:repeat(2,1fr);gap:26px 22px}}
+@media (min-width:1080px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start}
+@media (min-width:700px){.card{grid-template-columns:120px 1fr}}
+.cover{position:relative;aspect-ratio:2/3;border-radius:3px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(120% 70% at 50% 30%,color-mix(in srgb,var(--g) 30%,transparent),transparent 70%),#0a0b0e}
+.cover img{width:100%;height:100%;object-fit:cover}
+.cover .ph{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:10%;font-family:var(--display);font-size:1rem;line-height:1.15;color:var(--paper)}
+.cover .ph::before{content:attr(data-n);font-family:var(--sans);font-size:.7rem;letter-spacing:.14em;color:var(--g);margin-bottom:auto}
+.card h4{font-family:var(--display);font-weight:500;font-size:1.25rem;line-height:1.25;margin:0 0 4px}
+html:lang(en) .card h4{font-weight:600;font-size:1.125rem}
+.card .log{margin:0 0 6px;color:var(--paper2);font-size:.96875rem;line-height:1.6}
+html:lang(en) .card .log{font-family:var(--serif-en);font-style:italic;font-size:.9375rem}
+html:lang(he) .card .log{font-family:var(--serif-he);font-size:1.0625rem}
+.card .meta{margin:0;color:var(--paper3);font-size:.8125rem}
+/* pricing */
+.plans{display:grid;gap:18px;margin:0 0 26px}
+@media (min-width:720px){.plans{grid-template-columns:1fr 1fr;max-width:48rem}}
+.plan{position:relative;background:var(--ink1);border:1px solid var(--line2);border-radius:8px;padding:24px 24px 22px}
+.plan.best{border-color:var(--sodium);background:linear-gradient(180deg,var(--sodium-dim),transparent 60%),var(--ink1)}
+.plan h3{font-size:1.25rem;color:var(--paper2);font-family:var(--sans);font-weight:600}
+.plan .amt{margin:10px 0 14px;font-family:var(--display);font-size:2.6rem;line-height:1}
+.plan .amt span{font-family:var(--sans);font-size:1rem;color:var(--paper3);margin-inline-start:6px}
+.plan ul{margin:0;padding:0;list-style:none}
+.plan li{padding:4px 0;padding-inline-start:20px;position:relative;color:var(--paper2)}
+.plan li::before{content:"";position:absolute;inset-inline-start:2px;top:.75em;width:8px;height:8px;border-radius:50%;background:var(--sodium)}
+.badge{position:absolute;top:-12px;inset-inline-end:18px;background:var(--sodium);color:#140d02;font-size:.8125rem;font-weight:600;padding:2px 12px;border-radius:999px}
+.fine{color:var(--paper3);font-size:.9375rem;max-width:48rem}
+.fine p{margin:0 0 10px}
+/* privacy */
+.pillars{display:grid;gap:18px;list-style:none;margin:0 0 26px;padding:0}
+@media (min-width:720px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillars li{border-top:2px solid var(--sodium);padding-top:16px}
+.pillars h3{font-size:1.4rem;margin-bottom:6px}
+.pillars p{margin:0;color:var(--paper2)}
+.big{font-family:var(--display);font-size:clamp(1.4rem,3.4vw,2rem);margin:0 0 30px;color:var(--paper)}
+/* faq */
+.faq{max-width:48rem}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 0;padding-inline-end:36px;position:relative;font-weight:600;font-size:1.0625rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;inset-inline-end:4px;top:14px;font-size:1.5rem;line-height:1;color:var(--sodium)}
+.faq summary::after{transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+@media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
+.faq details p{margin:0 0 20px;color:var(--paper2)}
+.faq h3{font:inherit}
+/* support */
+.page-head{padding-top:56px;padding-bottom:24px}
+.page-head h1{font-size:clamp(2.2rem,6vw,3.5rem);font-weight:700}
+.page-head p{color:var(--paper2);max-width:42rem;margin:16px 0 0;font-size:1.125rem}
+.grid2{display:grid;gap:18px;padding-bottom:64px}
+@media (min-width:860px){.grid2{grid-template-columns:1fr 1fr}}
+.box{background:var(--ink1);border:1px solid var(--line);border-radius:8px;padding:22px 22px 18px;scroll-margin-top:80px}
+.box.wide{grid-column:1/-1}
+.box h2{font-size:1.5rem;margin:0 0 12px}
+.box p,.box li{color:var(--paper2)}
+.box p{margin:0 0 12px}
+.box ol,.box ul{margin:0 0 12px;padding-inline-start:1.3em}
+.box li{margin-bottom:6px}
+.box li::marker{color:var(--sodium)}
+.box strong{color:var(--paper)}
+.box dl{margin:0 0 12px;display:grid;grid-template-columns:auto 1fr;gap:8px 18px}
+.box dt{color:var(--paper3)}
+.box dd{margin:0;color:var(--paper)}
+@media (max-width:480px){.box dl{grid-template-columns:1fr;gap:2px}.box dd{margin-bottom:10px}}
+/* footer */
+footer.site{padding:44px 0 56px;color:var(--paper3);font-size:.875rem}
+footer.site ul{display:flex;flex-wrap:wrap;gap:6px 22px;list-style:none;padding:0;margin:0 0 20px}
+footer.site a{color:var(--paper2)}
+footer.site a:hover{color:var(--sodium)}
+footer.site p{margin:0 0 6px}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://itziklugassy.github.io/nightfile-support/#app",
+   "name": "Nightfile",
+   "alternateName": "אחרי חצות",
+   "description": "אפליקציית סיפורי מקור בפרקים קצרים לקריאה בלילה: 24 סיפורים בשמונה ז'אנרים, בעברית ובאנגלית, עם מעברים מאוירים. פרק ראשון חינם, בלי פרסומות ובלי מעקב.",
+   "url": "https://itziklugassy.github.io/nightfile-support/",
+   "image": "https://itziklugassy.github.io/nightfile-support/og.png",
+   "operatingSystem": "iOS",
+   "applicationCategory": "BookApplication",
+   "applicationSubCategory": "Interactive fiction",
+   "contentRating": "16+",
+   "inLanguage": [
+    "he",
+    "en"
+   ],
+   "isAccessibleForFree": false,
+   "softwareVersion": "1.0",
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Free first chapter",
+     "price": "0",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Monthly",
+     "price": "8.99",
+     "priceCurrency": "USD",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "US"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "8.99",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "MON"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Annual",
+     "price": "49.99",
+     "priceCurrency": "USD",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "US"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "49.99",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "ANN"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Monthly",
+     "price": "34.90",
+     "priceCurrency": "ILS",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "IL"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "34.90",
+      "priceCurrency": "ILS",
+      "billingDuration": 1,
+      "unitCode": "MON"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Nightfile Premium, Annual",
+     "price": "249.00",
+     "priceCurrency": "ILS",
+     "category": "subscription",
+     "eligibleRegion": {
+      "@type": "Country",
+      "name": "IL"
+     },
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "249.00",
+      "priceCurrency": "ILS",
+      "billingDuration": 1,
+      "unitCode": "ANN"
+     }
+    }
+   ],
+   "publisher": {
+    "@id": "https://itziklugassy.github.io/nightfile-support/#org"
+   },
+   "author": {
+    "@id": "https://itziklugassy.github.io/nightfile-support/#org"
+   },
+   "accessibilityFeature": [
+    "largePrint",
+    "highContrastDisplay",
+    "displayTransformability",
+    "alternativeText",
+    "readingOrder"
+   ],
+   "accessibilityHazard": "none",
+   "accessibilityControl": [
+    "fullTouchControl"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://itziklugassy.github.io/nightfile-support/#org",
+   "name": "DIGITAL LAB",
+   "url": "https://itziklugassy.github.io/nightfile-support/",
+   "logo": "https://itziklugassy.github.io/nightfile-support/icon-512.png",
+   "email": "bestoftbest.service@gmail.com",
+   "telephone": "+972-52-344-5266",
+   "founder": {
+    "@type": "Person",
+    "name": "Itzik Lugassy",
+    "alternateName": "איציק לוגאסי"
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Trumpeldor 1",
+    "addressLocality": "Tel Aviv",
+    "addressCountry": "IL"
+   },
+   "contactPoint": [
+    {
+     "@type": "ContactPoint",
+     "contactType": "customer support",
+     "email": "bestoftbest.service@gmail.com",
+     "telephone": "+972-52-344-5266",
+     "availableLanguage": [
+      "he",
+      "en"
+     ],
+     "url": "https://itziklugassy.github.io/nightfile-support/en/support.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://itziklugassy.github.io/nightfile-support/#faq",
+   "inLanguage": "he",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "מה זה אחרי חצות?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "אחרי חצות (Nightfile) היא אפליקציה לאייפון ולאייפד עם 24 סיפורי מקור אפלים בפרקים קצרים, בעברית ובאנגלית, ובין הפרקים מעברים מאוירים."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "האם האפליקציה חינמית?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "הפרק הראשון של סיפור אחד חינם; כל השאר דורש מנוי: ₪34.90 לחודש או ₪249 לשנה בישראל (‎$8.99 או ‎$49.99 בארה\"ב), והמנוי השנתי מתחיל ב-7 ימי ניסיון חינם."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "איך מבטלים את המנוי?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "באייפון או באייפד: הגדרות > השם שלכם > מינויים > Nightfile > ביטול מינוי, לפחות 24 שעות לפני החידוש; אפשר גם לכתוב לנו, ובישראל אפשר לבקש ביטול מיידי עם החזר יחסי."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "לאיזה גיל מתאימה האפליקציה?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "הדירוג הוא 16+: הסיפורים כוללים נושאים בוגרים, מתח, אימה ואלימות לא גרפית, ואין בהם תוכן מיני."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "באילו שפות אפשר לקרוא?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כל 24 הסיפורים זמינים בעברית ובאנגלית, ואפשר להחליף שפה בכל רגע בהגדרות האפליקציה."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "אפשר לקרוא בלי אינטרנט?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כן. סיפורי ההשקה כלולים באפליקציה עצמה, כך שאפשר לקרוא בטיסה או במקום בלי קליטה; רכישה ושחזור מנוי דורשים חיבור."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "מה אתם יודעים עליי?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כמעט כלום: אין חשבון, אין פרסומות ואין מעקב, והתקדמות הקריאה נשמרת רק במכשיר; RevenueCat מקבלת מזהה אנונימי ונתוני רכישה, שאינם מקושרים לזהותכם, כדי לנהל את המנוי ולהפיק מדדי מנויים מצרפיים."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "האפליקציה נגישה?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כן. יש תמיכה מלאה ב-VoiceOver, ב-Dynamic Type, בהפחתת תנועה ובניגודיות גבוהה, ולכל לוח מאויר יש תיאור טקסטואלי; הצהרת הנגישות מפרטת את המגבלות הידועות."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "איך מגיעים סיפורים חדשים?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "אנחנו מוסיפים פרקים וסיפורים חדשים עם הזמן בעדכוני האפליקציה, ומועדי היציאה מוצגים באפליקציה; אין לוח זמנים קבוע."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "איך משחזרים מנוי במכשיר חדש?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "התחברו לאותו חשבון Apple, פתחו את האפליקציה והקישו על \"שחזור רכישות\" במסך המנוי או בהגדרות."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://itziklugassy.github.io/nightfile-support/#site",
+   "url": "https://itziklugassy.github.io/nightfile-support/",
+   "name": "Nightfile",
+   "alternateName": "אחרי חצות",
+   "inLanguage": [
+    "he",
+    "en"
+   ],
+   "publisher": {
+    "@id": "https://itziklugassy.github.io/nightfile-support/#org"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+<header class="top"><div class="wrap">
+<a class="mark" href="./" aria-label="אחרי חצות, דף הבית"><b>אחרי חצות</b><span lang="en">Nightfile</span></a>
+<nav aria-label="ניווט ראשי"><ul><li><a href="#stories">הסיפורים</a></li><li class="opt"><a href="#pricing">מחיר</a></li><li class="opt"><a href="#faq">שאלות</a></li><li><a href="support.html">תמיכה</a></li><li class="lang"><a href="en/" lang="en" hreflang="en">English</a></li></ul></nav>
+</div></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1"><div class="wrap">
+<div>
+<p class="kicker">נואר בפרקים · עברית ואנגלית · מגיל 16</p>
+<h1 id="h1">סיפורי מתח בפרקים קצרים, לקריאה אחרי חצות.</h1>
+<p class="lede">24 סיפורי מקור בשמונה ז&#x27;אנרים אפלים. כל פרק נקרא בכעשר דקות, ובין הפרקים מחכה מעבר מאויר שמוביל אתכם הלאה.</p>
+<div class="ctas">
+<a class="store" href="https://apps.apple.com/" data-appstore-link data-todo="TODO: replace href with the Nightfile App Store URL after App Review approval, and replace this button with Apple&#x27;s official Download on the App Store badge"><small>לאייפון ולאייפד</small><strong>להורדה ב-App Store</strong></a>
+<a class="ghost" href="#stories">לסיפורים</a>
+</div>
+<p class="hint">הפרק הראשון חינם. ₪34.90 לחודש, או ₪249 לשנה עם 7 ימי ניסיון חינם.</p>
+</div>
+<div class="frame"><img src="img/hero-pawn.webp" width="640" height="1120" alt="איור נואר: גבר בכובע ובמעיל ארוך עומד מול חלון ראווה מואר ברחוב רטוב מגשם בלילה, לאור פנסי רחוב." fetchpriority="high" decoding="async"></div>
+</div></section>
+<div class="facts"><div class="wrap"><dl><div><dt>סיפורי מקור</dt><dd>24</dd></div><div><dt>ז&#x27;אנרים</dt><dd>8</dd></div><div><dt>דקות בערך לכל פרק</dt><dd>10</dd></div><div><dt>שפות: עברית ואנגלית</dt><dd>2</dd></div></dl></div></div>
+<section class="band" aria-labelledby="how-h"><div class="wrap">
+<h2 id="how-h">איך זה נקרא</h2>
+<p class="intro">טקסט נקי, בגודל ובגופן שתבחרו, בשלוש ערכות צבע לילה. בסוף כל פרק, כמה לוחות מאוירים עם כיתובי מספר, ואז הפרק הבא.</p>
+<ul class="how"><li><img src="img/pawn-c1-p1.webp" width="480" height="657" alt="לוח מאויר: מסך מצלמת אבטחה בבית משכון חשוך מראה גבר בכובע ליד הדלפק, ולידו מנורת שולחן וספל קפה." loading="lazy" decoding="async"><div class="cap"><h3>פרק</h3><p>קוראים פרק של כעשר דקות. המיקום נשמר אוטומטית.</p></div></li><li><img src="img/pawn-c1-p2.webp" width="480" height="480" alt="לוח מאויר: שתי ידיים מחזיקות טבעת נישואין מזהב עם חריטה בצדה הפנימי." loading="lazy" decoding="async"><div class="cap"><h3>מעבר מאויר</h3><p>לוחות עם כיתובי מספר. אתם מחליטים מתי להמשיך.</p></div></li><li><img src="img/pawn-c1-p3.webp" width="480" height="840" alt="לוח מאויר: גבר במעיל ארוך מושיט יד לדלת של חנות מוארת ברחוב שטוף גשם." loading="lazy" decoding="async"><div class="cap"><h3>הפרק הבא</h3><p>ממשיכים לפרק הבא, גם בלי חיבור לאינטרנט.</p></div></li></ul>
+</div></section>
+<section class="band" id="stories" aria-labelledby="stories-h"><div class="wrap">
+<h2 id="stories-h">שמונה מדפים, 24 סיפורים</h2>
+<p class="intro">כל סיפור הוא עלילה סגורה של 6 עד 8 פרקים. בחרו מדף:</p>
+<ul class="shelf-nav"><li><a href="#shelf-noir" style="--g:#E9A23B">נואר ופשע</a></li><li><a href="#shelf-psych" style="--g:#7FC4D6">מותחן פסיכולוגי</a></li><li><a href="#shelf-detective" style="--g:#D9C27A">תעלומה בלשית</a></li><li><a href="#shelf-horror" style="--g:#E8806F">אימה על-טבעית</a></li><li><a href="#shelf-spy" style="--g:#5FB8A6">ריגול</a></li><li><a href="#shelf-dystopia" style="--g:#A9CF54">דיסטופיה</a></li><li><a href="#shelf-romance" style="--g:#D77A93">רומנטיקה אפלה</a></li><li><a href="#shelf-files" style="--g:#8EA6E8">תיקים בדיוניים</a></li></ul>
+<section class="shelf" id="shelf-noir" style="--g:#E9A23B" aria-labelledby="sh-noir">
+<div class="shelf-head"><h3 id="sh-noir">נואר ופשע</h3><p>הערות תוכן: אלימות לא גרפית, מוות, פשע, מתח</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="img/pawn.webp" width="400" height="600" alt="עטיפת הסיפור משכון לילה" loading="lazy" decoding="async"></div><div><h4>משכון לילה</h4><p class="log">בשלוש לפנות בוקר נכנס זר לבית המשכון של אבנר ומשכן טבעת נישואין: הטבעת שאבנר קבר עם אשתו לפני שלוש שנים.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="03" aria-hidden="true">מונה</span></div><div><h4>מונה</h4><p class="log">כל לילה ב-2:14 נוסעת שקטה מזמינה את המונית של דב לאותה פינה. לילה אחד היא משאירה לו קבלה מהלילה הכי גרוע בחייו.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="02" aria-hidden="true">ניקוי יבש</span></div><div><h4>ניקוי יבש</h4><p class="log">עשרים שנה אחרי ששלושה עדים שלחו את בעלה לכלא, כל אחד מהם מביא לרות מעיל עם אותה טביעת יד שחורה על הכתף.</p><p class="meta">7 פרקים</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-psych" style="--g:#7FC4D6" aria-labelledby="sh-psych">
+<div class="shelf-head"><h3 id="sh-psych">מותחן פסיכולוגי</h3><p>הערות תוכן: מתח פסיכולוגי, מניפולציה, מצוקה רגשית</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="06" aria-hidden="true">תשובה אוטומטית</span></div><div><h4>תשובה אוטומטית</h4><p class="log">מיכאל מקבל תשובה אוטומטית מהכתובת של עצמו: אל תנסה למצוא אותי. הוא מעולם לא כתב אותה.</p><p class="meta">7 פרקים</p></div></article></li><li><article class="card"><div class="cover"><img src="img/diary.webp" width="400" height="600" alt="עטיפת הסיפור שלושים ואחד יום" loading="lazy" decoding="async"></div><div><h4>שלושים ואחד יום</h4><p class="log">כל בוקר נועה מוצאת על השטיח דף יומן בכתב ידה, עם התאריך של מחר. ואז זה קורה.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="05" aria-hidden="true">החלון השני</span></div><div><h4>החלון השני</h4><p class="log">אחרי התאונה אנה זוכרת חמישה חדרים בסטודיו שלה. היא חוזרת הביתה לארבעה, ולארוס שאומר שתמיד היו ארבעה.</p><p class="meta">7 פרקים</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-detective" style="--g:#D9C27A" aria-labelledby="sh-detective">
+<div class="shelf-head"><h3 id="sh-detective">תעלומה בלשית</h3><p>הערות תוכן: מוות, רצח מחוץ לפריים, מתח</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="img/room.webp" width="400" height="600" alt="עטיפת הסיפור החדר השמיני" loading="lazy" decoding="async"></div><div><h4>החדר השמיני</h4><p class="log">סערה, הפסקת חשמל, אכסניה מעל הים. באחת בלילה יהודית רואה זר על המדרגות. בבוקר כולם נשבעים שאף אחד לא הגיע.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="09" aria-hidden="true">אבידות ומציאות</span></div><div><h4>אבידות ומציאות</h4><p class="log">בתיבת האבידות של התחנה, דיקטפון שעדיין מקליט: שני קולות מתכננים רצח ליום שישי, 23:40, ליד רציף 11.</p><p class="meta">7 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="08" aria-hidden="true">תשבץ אחרון</span></div><div><h4>תשבץ אחרון</h4><p class="log">התשבץ האחרון של מלך המילים נקרא כמו רשימת נוכחים מהלילה שבו מת. והתשובה שחוצה את אמצע הרשת היא השם של הבת שלו.</p><p class="meta">8 פרקים</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-horror" style="--g:#E8806F" aria-labelledby="sh-horror">
+<div class="shelf-head"><h3 id="sh-horror">אימה על-טבעית</h3><p>הערות תוכן: אימה על-טבעית, מוות, אבל, דימויים מפחידים</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="12" aria-hidden="true">שקט של חדר</span></div><div><h4>שקט של חדר</h4><p class="log">רוני מקליטה דקה של שקט בבית ריק. בהשמעה: צלחות, צחוק, וילדה שקוראת לה בשם.</p><p class="meta">6 פרקים</p></div></article></li><li><article class="card"><div class="cover"><img src="img/tide.webp" width="400" height="600" alt="עטיפת הסיפור שפל" loading="lazy" decoding="async"></div><div><h4>שפל</h4><p class="log">הים נסוג קילומטר ומשאיר פעמון כנסייה עומד על החול. הוא מצלצל רק כשליאת מתקרבת.</p><p class="meta">7 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="11" aria-hidden="true">המקהלה</span></div><div><h4>המקהלה</h4><p class="log">ירדנה מצטרפת למקהלה של העיירה. אחרי כל חזרה, מישהו בעיירה שוכח מישהו שהוא אוהב.</p><p class="meta">7 פרקים</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-spy" style="--g:#5FB8A6" aria-labelledby="sh-spy">
+<div class="shelf-head"><h3 id="sh-spy">ריגול</h3><p>הערות תוכן: אלימות לא גרפית, בגידה, מתח</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="15" aria-hidden="true">סיפור כיסוי</span></div><div><h4>סיפור כיסוי</h4><p class="log">לנה היא רופאת שיניים, אישה ואמא, וכבר עשרים שנה סוכנת רדומה שמחכה לשם אחד. ביום שני הוא מופיע ביומן המרפאה.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="14" aria-hidden="true">שלוש שניות עיכוב</span></div><div><h4>שלוש שניות עיכוב</h4><p class="log">עד מוגן משלב בעדות שלו ביטויים שרק המתורגמנית שלו מבינה: השפה הסודית שאביה המציא בשבילה.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><img src="img/letter.webp" width="400" height="600" alt="עטיפת הסיפור מכתב מת" loading="lazy" decoding="async"></div><div><h4>מכתב מת</h4><p class="log">אחת עשרה שנה הילה שולחת גלויות מוצפנות למפעיל שלה, וההוראות ממשיכות להגיע. ואז היא מגלה שהוא מת שמונה ימים אחרי שנפגשו.</p><p class="meta">8 פרקים</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-dystopia" style="--g:#A9CF54" aria-labelledby="sh-dystopia">
+<div class="shelf-head"><h3 id="sh-dystopia">דיסטופיה</h3><p>הערות תוכן: דיכוי ושליטה, מצוקה, אלימות לא גרפית</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><span class="ph" data-n="17" aria-hidden="true">משמרת שנייה</span></div><div><h4>משמרת שנייה</h4><p class="log">ענבל משכירה את הלילות שלה וישנה דרכם. בוקר אחד היא מתעוררת עם פרק אצבע חבול ושרוכים קשורים בקשר שהיא לא יודעת לקשור.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><img src="img/quiet.webp" width="400" height="600" alt="עטיפת הסיפור שעות השקט" loading="lazy" decoding="async"></div><div><h4>שעות השקט</h4><p class="log">בעיר שבה משלמים על כל דקת דיבור, רונה חוסכת 47 דקות כדי להעיד למען השכן שלה. בן לילה מישהו קונה את כולן.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="18" aria-hidden="true">מס זיכרון</span></div><div><h4>מס זיכרון</h4><p class="log">את המס משלמים בזיכרונות. בתיה בודקת אדם שזוכר רק שלושים יום אחורה, ומישהו משלם עליו כבר שלוש עשרה שנה.</p><p class="meta">7 פרקים</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-romance" style="--g:#D77A93" aria-labelledby="sh-romance">
+<div class="shelf-head"><h3 id="sh-romance">רומנטיקה אפלה</h3><p>הערות תוכן: יחסים פוגעניים, איומים, אלימות לא גרפית</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="img/signature.webp" width="400" height="600" alt="עטיפת הסיפור חתימה שנייה" loading="lazy" decoding="async"></div><div><h4>חתימה שנייה</h4><p class="log">בליל החתונה, ב-00:38, אדוה רואה את בעלה מזייף את החתימה שלה. היא יודעת על זה כבר שנה. היא התחתנה איתו כדי להבין למה.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="21" aria-hidden="true">עשרים דקות</span></div><div><h4>עשרים דקות</h4><p class="log">אבא שלה שולח את לילך לנגן בפסנתר במועדון של האויב שלו ולגנוב שטר מהכספת. בלילה הראשון הבעלים מזמזם לה את שיר הערש של אמא שלה.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="20" aria-hidden="true">כתובת שגויה</span></div><div><h4>כתובת שגויה</h4><p class="log">מכתב מספר 14 מזר, לאישה שנעלמה, מגיע לתיבה של שירן. בשלוש לפנות בוקר היא עונה לו בשמה. דקות אחר כך, מכתבים 1 עד 13 מחכים על השטיח שלה.</p><p class="meta">7 פרקים</p></div></article></li></ul>
+</section><section class="shelf" id="shelf-files" style="--g:#8EA6E8" aria-labelledby="sh-files">
+<div class="shelf-head"><h3 id="sh-files">תיקים בדיוניים</h3><p>הערות תוכן: מוות, היעלמות, טראומה, מתח</p></div>
+<ul class="cards"><li><article class="card"><div class="cover"><img src="img/tapes.webp" width="400" height="600" alt="עטיפת הסיפור הקלטות מיחידה 9" loading="lazy" decoding="async"></div><div><h4>הקלטות מיחידה 9</h4><p class="log">מגישת פודקאסט קונה מחסן נטוש בעיירה שממנה היא באה ושאליה מעולם לא חזרה. בפנים: ארבע עשרה קלטות בלי תוויות, ואישה שמתוודה על קבורה שאף אחד לא ידע עליה.</p><p class="meta">8 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="23" aria-hidden="true">תיק מחנה הקיץ</span></div><div><h4>תיק מחנה הקיץ</h4><p class="log">לפני שלושים שנה, בלילה שבו נשרף בית הסירות של המחנה, מדריך יצא ליער ולא נראה שוב. עכשיו התיק נפתח מחדש, מסמך אחרי מסמך.</p><p class="meta">7 פרקים</p></div></article></li><li><article class="card"><div class="cover"><span class="ph" data-n="24" aria-hidden="true">תגובות</span></div><div><h4>תגובות</h4><p class="log">עשרים שנה אחרי מותה של נערה, פורום פשע אמיתי פותח את התיק מחדש. משתמש חדש יודע פרטים שאף אחד לא פרסם.</p><p class="meta">7 פרקים</p></div></article></li></ul>
+</section>
+</div></section>
+<section class="band" id="pricing" aria-labelledby="pricing-h"><div class="wrap">
+<h2 id="pricing-h">מחיר</h2>
+<p class="intro">מנוי אחד פותח את כל הסיפורים והפרקים, כולל פרקים חדשים כשהם יוצאים.</p>
+<div class="plans"><div class="plan best"><span class="badge">משתלם</span><h3>שנתי</h3><p class="amt"><bdi>₪249</bdi><span>לשנה</span></p><ul><li>7 ימי ניסיון חינם</li><li>כ-₪20.75 לחודש</li><li>חיוב שנתי בסוף תקופת הניסיון</li></ul></div><div class="plan"><h3>חודשי</h3><p class="amt"><bdi>₪34.90</bdi><span>לחודש</span></p><ul><li>בלי התחייבות</li><li>חיוב חודשי</li><li>ביטול בכל עת</li></ul></div></div>
+<div class="fine"><p>המחירים כוללים מע&quot;מ. בארה&quot;ב: ‎$49.99 לשנה או ‎$8.99 לחודש, בתוספת מס מכירה. במדינות אחרות המחיר נקבע לפי מחירון Apple ומוצג במטבע המקומי.</p><p>המנוי מתחדש אוטומטית עד שתבטלו. כדי להימנע מחיוב, בטלו בהגדרות Apple לפחות 24 שעות לפני סוף התקופה הנוכחית או תקופת הניסיון.</p><p>המנוי זמין לשיתוף משפחתי (Family Sharing) ובכל המכשירים המחוברים לאותו חשבון Apple.</p><p>כל התנאים: <a href="terms-of-use-he.html#t9">תנאי השימוש, סעיף 9</a>.</p></div>
+</div></section>
+<section class="band" id="privacy" aria-labelledby="privacy-h"><div class="wrap">
+<h2 id="privacy-h">פרטיות קודם כול</h2>
+<p class="big">בלי פרסומות. בלי מעקב. בלי חשבון.</p>
+<ul class="pillars"><li><h3>בלי פרסומות</h3><p>אין פרסומות באפליקציה, ואין גישה למזהה הפרסום של המכשיר.</p></li><li><h3>בלי מעקב</h3><p>אין כלי אנליטיקה, אין עוגיות ואין פיקסלים, גם לא באתר הזה. שום דבר לא משמש למעקב.</p></li><li><h3>בלי חשבון</h3><p>אין הרשמה. התקדמות הקריאה וההגדרות נשמרות רק במכשיר שלכם.</p></li></ul>
+<div class="fine"><p>רק מזהה אנונימי ונתוני רכישה, שאינם מקושרים לזהותכם, עוברים ל-RevenueCat לניהול המנוי ולמדדי מנויים מצרפיים. הפרטים המלאים ב<a href="privacy-policy-he.html">מדיניות הפרטיות</a>.</p></div>
+</div></section>
+<section class="band" id="accessibility" aria-labelledby="a11y-h"><div class="wrap">
+<h2 id="a11y-h">נגישות</h2>
+<p class="intro">VoiceOver בעברית ובאנגלית, Dynamic Type כולל גדלים מוגדלים, הפחתת תנועה, ניגודיות טקסט של 4.5:1 לפחות ומטרות מגע של 44 נקודות. היעד: רמה AA לפי ת&quot;י 5568.</p>
+<div class="fine"><p><a href="accessibility-statement-he.html">הצהרת הנגישות</a> המלאה, כולל מגבלות ידועות ודרכי פנייה.</p></div>
+</div></section>
+<section class="band" id="faq" aria-labelledby="faq-h"><div class="wrap">
+<h2 id="faq-h">שאלות נפוצות</h2>
+<div class="faq"><details><summary><h3>מה זה אחרי חצות?</h3></summary><p>אחרי חצות (Nightfile) היא אפליקציה לאייפון ולאייפד עם 24 סיפורי מקור אפלים בפרקים קצרים, בעברית ובאנגלית, ובין הפרקים מעברים מאוירים.</p></details><details><summary><h3>האם האפליקציה חינמית?</h3></summary><p>הפרק הראשון של סיפור אחד חינם; כל השאר דורש מנוי: ₪34.90 לחודש או ₪249 לשנה בישראל (‎$8.99 או ‎$49.99 בארה&quot;ב), והמנוי השנתי מתחיל ב-7 ימי ניסיון חינם.</p></details><details><summary><h3>איך מבטלים את המנוי?</h3></summary><p>באייפון או באייפד: הגדרות &gt; השם שלכם &gt; מינויים &gt; Nightfile &gt; ביטול מינוי, לפחות 24 שעות לפני החידוש; אפשר גם לכתוב לנו, ובישראל אפשר לבקש ביטול מיידי עם החזר יחסי.</p></details><details><summary><h3>לאיזה גיל מתאימה האפליקציה?</h3></summary><p>הדירוג הוא 16+: הסיפורים כוללים נושאים בוגרים, מתח, אימה ואלימות לא גרפית, ואין בהם תוכן מיני.</p></details><details><summary><h3>באילו שפות אפשר לקרוא?</h3></summary><p>כל 24 הסיפורים זמינים בעברית ובאנגלית, ואפשר להחליף שפה בכל רגע בהגדרות האפליקציה.</p></details><details><summary><h3>אפשר לקרוא בלי אינטרנט?</h3></summary><p>כן. סיפורי ההשקה כלולים באפליקציה עצמה, כך שאפשר לקרוא בטיסה או במקום בלי קליטה; רכישה ושחזור מנוי דורשים חיבור.</p></details><details><summary><h3>מה אתם יודעים עליי?</h3></summary><p>כמעט כלום: אין חשבון, אין פרסומות ואין מעקב, והתקדמות הקריאה נשמרת רק במכשיר; RevenueCat מקבלת מזהה אנונימי ונתוני רכישה, שאינם מקושרים לזהותכם, כדי לנהל את המנוי ולהפיק מדדי מנויים מצרפיים.</p></details><details><summary><h3>האפליקציה נגישה?</h3></summary><p>כן. יש תמיכה מלאה ב-VoiceOver, ב-Dynamic Type, בהפחתת תנועה ובניגודיות גבוהה, ולכל לוח מאויר יש תיאור טקסטואלי; הצהרת הנגישות מפרטת את המגבלות הידועות.</p></details><details><summary><h3>איך מגיעים סיפורים חדשים?</h3></summary><p>אנחנו מוסיפים פרקים וסיפורים חדשים עם הזמן בעדכוני האפליקציה, ומועדי היציאה מוצגים באפליקציה; אין לוח זמנים קבוע.</p></details><details><summary><h3>איך משחזרים מנוי במכשיר חדש?</h3></summary><p>התחברו לאותו חשבון Apple, פתחו את האפליקציה והקישו על &quot;שחזור רכישות&quot; במסך המנוי או בהגדרות.</p></details></div>
+<div class="fine"><p style="margin-top:24px">עוד עזרה בדף <a href="support.html">התמיכה</a>.</p></div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<nav aria-label="קישורים"><ul><li><a href="privacy-policy-he.html">מדיניות פרטיות</a></li><li><a href="terms-of-use-he.html">תנאי שימוש</a></li><li><a href="accessibility-statement-he.html">הצהרת נגישות</a></li><li><a href="support.html">תמיכה</a></li><li><a href="./">דף הבית</a></li><li><a href="en/" lang="en" hreflang="en">English</a></li></ul></nav>
+<p>DIGITAL LAB · איציק לוגאסי, עוסק יחיד, מספר עוסק 301704373 · טרומפלדור 1, תל אביב · <a href="mailto:bestoftbest.service@gmail.com" dir="ltr">bestoftbest.service@gmail.com</a></p>
+<p>© 2026 אחרי חצות. כל הזכויות שמורות. Apple, App Store, iPhone ו-iPad הם סימני מסחר של Apple Inc.</p>
+<p>האתר לא משתמש בעוגיות, באנליטיקה או במעקב, ולא טוען דבר מצד שלישי.</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://itziklugassy.github.io/nightfile-support/sitemap.xml

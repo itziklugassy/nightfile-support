@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="robots" content="index,follow">
+<title>Accessibility Statement | Nightfile</title>
+<link rel="canonical" href="https://itziklugassy.github.io/nightfile-support/accessibility-statement-en.html">
+<link rel="alternate" hreflang="he" href="https://itziklugassy.github.io/nightfile-support/accessibility-statement-he.html">
+<link rel="alternate" hreflang="en" href="https://itziklugassy.github.io/nightfile-support/accessibility-statement-en.html">
+<link rel="alternate" hreflang="x-default" href="https://itziklugassy.github.io/nightfile-support/accessibility-statement-en.html">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#0e0e12;--surface:#16161c;--surface-2:#1c1c24;--border:#2c2c36;
+  --text:#ecebe6;--muted:#b4b2aa;--accent:#e2b866;--accent-soft:rgba(226,184,102,.10);
+  --accent-border:rgba(226,184,102,.38);--warn:rgba(214,96,80,.12);--warn-border:rgba(214,96,80,.45);
+  --link:#f0c97a;--focus:#ffd98e;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#faf8f3;--surface:#ffffff;--surface-2:#f3f0e8;--border:#ddd8cc;
+    --text:#1d1c1a;--muted:#55524b;--accent:#8a5a00;--accent-soft:rgba(138,90,0,.07);
+    --accent-border:rgba(138,90,0,.35);--warn:rgba(170,40,30,.06);--warn-border:rgba(170,40,30,.40);
+    --link:#7a4b00;--focus:#7a4b00;
+  }
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Arial Hebrew","Noto Sans Hebrew",Arial,sans-serif;
+  font-size:1.0625rem;line-height:1.75}
+.skip{position:absolute;inset-inline-start:-9999px;top:0}
+.skip:focus{inset-inline-start:12px;top:12px;background:var(--surface);color:var(--text);padding:8px 14px;border-radius:8px;z-index:10}
+header.top{border-bottom:1px solid var(--border);padding:28px 16px 22px;text-align:center;background:var(--surface)}
+header.top .lang{font-size:.875rem;color:var(--muted);margin:0 0 10px}
+header.top h1{font-size:1.75rem;line-height:1.3;margin:0}
+header.top .app{color:var(--accent);font-weight:600;margin:6px 0 0;font-size:1.0625rem}
+header.top .ver{display:inline-block;margin:12px 0 0;padding:4px 14px;border:1px solid var(--accent-border);
+  border-radius:999px;background:var(--accent-soft);font-size:.875rem}
+header.top .doclinks{margin:12px 0 0;font-size:.9375rem;color:var(--muted)}
+main{max-width:46rem;margin:0 auto;padding:20px 16px 56px}
+section,.box{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 20px;margin:0 0 16px}
+.summary{background:var(--accent-soft);border-color:var(--accent-border)}
+.warnbox{background:var(--warn);border-color:var(--warn-border)}
+h2{font-size:1.25rem;line-height:1.4;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+h2 .num{color:var(--accent);margin-inline-end:6px}
+.summary h2,.warnbox h2{border-bottom:none;padding-bottom:0}
+h3{font-size:1.0625rem;margin:18px 0 6px;color:var(--accent)}
+p{margin:0 0 12px}
+p:last-child,ul:last-child,ol:last-child{margin-bottom:0}
+ul,ol{margin:0 0 12px;padding-inline-start:1.4em}
+li{margin-bottom:6px}
+li::marker{color:var(--accent)}
+a{color:var(--link);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.clause{margin:0 0 12px}
+.clause b.cn{color:var(--accent);margin-inline-end:6px}
+.tldr{background:var(--surface-2);border-inline-start:3px solid var(--accent-border);border-radius:8px;padding:8px 12px;margin:0 0 14px;font-size:.96875rem}
+.muted{color:var(--muted);font-size:.9375rem}
+.ph{background:rgba(255,215,0,.18);border:1px dashed var(--accent-border);border-radius:4px;padding:0 4px;font-weight:600}
+.ltr{direction:ltr;unicode-bidi:isolate}
+nav.toc ol{columns:2;column-gap:28px;padding-inline-start:1.6em}
+nav.toc li{break-inside:avoid;font-size:.96875rem;margin-bottom:4px}
+.tablewrap{overflow-x:auto;margin:0 0 12px}
+table{width:100%;border-collapse:collapse;font-size:.9375rem}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:start;vertical-align:top}
+th{background:var(--surface-2);font-weight:700}
+footer{max-width:46rem;margin:0 auto;padding:0 16px 40px;text-align:center;color:var(--muted);font-size:.875rem}
+footer p{margin:4px 0}
+@media (max-width:620px){
+  header.top h1{font-size:1.5rem}
+  section,.box{padding:16px 14px}
+  nav.toc ol{columns:1}
+  table.stack thead{display:none}
+  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
+  table.stack tr{border:1px solid var(--border);border-radius:10px;margin:0 0 10px;padding:6px 0;background:var(--surface-2)}
+  table.stack td{border:none;padding:4px 12px}
+  table.stack td::before{content:attr(data-label);display:block;font-weight:700;color:var(--accent);font-size:.8125rem}
+}
+@media print{
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f4f4f4;--text:#000;--muted:#333;--accent:#000;--link:#000;--border:#999}
+  header.top .lang,.skip{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <p class="lang"><a href="accessibility-statement-he.html" lang="he" hreflang="he">עברית</a> | <strong>English</strong></p>
+  <h1>Accessibility Statement</h1>
+  <p class="app">Nightfile (אחרי חצות)</p>
+  <p class="ver">Version 1.0 · Dated October 24, 2026 · Effective November 1, 2026</p>
+  <p class="doclinks"><a href="privacy-policy-en.html">Privacy Policy</a> · <a href="terms-of-use-en.html">Terms of Use</a></p>
+</header>
+<main id="main">
+<section class="summary" aria-labelledby="sum">
+  <h2 id="sum">The short version</h2>
+  <ul>
+    <li>The App supports VoiceOver, Dynamic Type, Reduce Motion, high contrast and large touch targets.</li>
+    <li>You can choose the font, text size, line spacing and color theme (night, true black or sepia).</li>
+    <li>There are known limitations, mainly in the visual content of the graphic interludes. They are listed in Section 5.</li>
+    <li>Having trouble? Contact our accessibility coordinator, Itzik Lugassy, at <a href="mailto:bestoftbest.service@gmail.com">bestoftbest.service@gmail.com</a> or <a href="tel:+972523445266">+972-52-344-5266</a>. We reply within 14 business days.</li>
+  </ul>
+</section>
+
+<section id="a1">
+  <h2><span class="num">1.</span>Our commitment</h2>
+  <p>We believe fiction should be available to every reader, including people with disabilities. We designed Nightfile to work with the accessibility features built into iOS and iPadOS, and we keep improving it. This statement is published in line with Israel's Equal Rights for Persons with Disabilities Law, 5758-1998, and the Equal Rights for Persons with Disabilities (Service Accessibility Adjustments) Regulations, 5773-2013, and reflects our commitment to users in the United States and elsewhere.</p>
+</section>
+
+<section id="a2">
+  <h2><span class="num">2.</span>Scope</h2>
+  <p>This statement covers the Nightfile (אחרי חצות) app for iPhone and iPad, version 1.0 and later, and the legal pages site where the Terms of Use, Privacy Policy and this statement are published. It does not cover screens that Apple displays and operates, such as the App Store purchase sheet and subscription management.</p>
+</section>
+
+<section id="a3">
+  <h2><span class="num">3.</span>Conformance target</h2>
+  <p>The App is designed to meet Israeli Standard SI 5568, which is based on the Web Content Accessibility Guidelines (WCAG) 2.0, at Level AA, to the extent applicable to a native app, together with Apple's accessibility Human Interface Guidelines. Where relevant we also follow WCAG 2.1, for example on touch target size and support for both screen orientations.</p>
+  <p>Accessibility was checked in a self-assessment by the operator, using VoiceOver, Dynamic Type at every size, Reduce Motion and contrast checks on iPhone and iPad. The App has not yet been audited by an independent certified accessibility auditor. Date of the most recent check: October 27, 2026.</p>
+</section>
+
+<section id="a4">
+  <h2><span class="num">4.</span>Accessibility features</h2>
+  <h3>Screen reader</h3>
+  <ul>
+    <li>All buttons, tabs and controls have VoiceOver labels in Hebrew and English.</li>
+    <li>Chapter text is real text, not an image, so VoiceOver and Spoken Content can read it aloud.</li>
+    <li>Narrator captions in the graphic interludes are presented as text and can be read aloud.</li>
+    <li>Reading and navigation order follow the language direction: right to left in Hebrew, left to right in English.</li>
+  </ul>
+  <h3>Text and display</h3>
+  <ul>
+    <li>Dynamic Type support, including the larger accessibility sizes.</li>
+    <li>A choice of three fonts per language, including a sans-serif option (IBM Plex Sans), and adjustable line spacing.</li>
+    <li>Three color themes: night, true black (OLED) and sepia. Text contrast is at least 4.5:1.</li>
+    <li>No information is conveyed by color alone.</li>
+  </ul>
+  <h3>Motion and media</h3>
+  <ul>
+    <li>When iOS Reduce Motion is on, interlude animation is turned off and video clips are replaced by a still image.</li>
+    <li>Video clips are muted by default and convey no information through sound alone.</li>
+    <li>Interludes do not advance without your action, and the App has no time limits.</li>
+  </ul>
+  <h3>Operation</h3>
+  <ul>
+    <li>Touch targets are at least 44 by 44 points.</li>
+    <li>The close button on the subscription screen is always visible.</li>
+    <li>Your reading position is saved automatically, and you can add bookmarks and read offline.</li>
+  </ul>
+  <h3>Legal pages site</h3>
+  <ul>
+    <li>The pages use semantic HTML with headings, marked-up tables and a skip link, and adapt to screen size and browser text size.</li>
+    <li>The pages follow your device's light or dark mode setting.</li>
+  </ul>
+</section>
+
+<section id="a5">
+  <h2><span class="num">5.</span>Known limitations</h2>
+  <p>Despite our efforts, some parts of the App may not be fully accessible. These are the limitations we know about:</p>
+  <ul>
+    <li><strong>Illustrations and video clips.</strong> The illustrated panels and video clips in the interludes are visual content. Narrator captions are available as text, and every panel also has a text description that VoiceOver reads aloud.</li>
+    <li><strong>No built-in audio narration.</strong> This version has no narration. You can use VoiceOver or iOS Spoken Content to listen to the text.</li>
+    <li><strong>Very large text sizes.</strong> At the largest accessibility sizes, long titles in the library may be truncated with an ellipsis. The full text is available to VoiceOver and on the story page.</li>
+    <li><strong>Apple screens.</strong> The purchase sheet, subscription management and restore flow are operated by Apple, which is responsible for their accessibility.</li>
+    <li><strong>Cognitive accessibility.</strong> The stories are adult fiction written in literary language with complex plots. We do not currently offer a plain-language edition.</li>
+  </ul>
+</section>
+
+<section id="a6">
+  <h2><span class="num">6.</span>Turning on accessibility features</h2>
+  <ul>
+    <li><strong>VoiceOver:</strong> Settings &gt; Accessibility &gt; VoiceOver.</li>
+    <li><strong>Text size:</strong> Settings &gt; Accessibility &gt; Display &amp; Text Size &gt; Larger Text. You can also change text size in the App's reader settings.</li>
+    <li><strong>Reduce Motion:</strong> Settings &gt; Accessibility &gt; Motion &gt; Reduce Motion.</li>
+    <li><strong>Spoken Content:</strong> Settings &gt; Accessibility &gt; Spoken Content.</li>
+  </ul>
+</section>
+
+<section id="a7">
+  <h2><span class="num">7.</span>Contact us about accessibility</h2>
+  <p>If you run into a barrier, if something does not work with the assistive technology you use, or if you have a suggestion, we want to hear from you. On request we can also provide the text content of the interludes in an accessible format.</p>
+  <div class="tablewrap"><table class="stack">
+    <thead><tr><th scope="col">Item</th><th scope="col">Details</th></tr></thead>
+    <tbody>
+      <tr><td data-label="Item">Accessibility coordinator</td><td data-label="Details">Itzik Lugassy</td></tr>
+      <tr><td data-label="Item">Email</td><td data-label="Details"><a href="mailto:bestoftbest.service@gmail.com">bestoftbest.service@gmail.com</a> (please use the subject line "Accessibility")</td></tr>
+      <tr><td data-label="Item">Phone</td><td data-label="Details"><a href="tel:+972523445266">+972-52-344-5266</a></td></tr>
+      <tr><td data-label="Item">Mailing address</td><td data-label="Details">Trumpeldor 1, Tel Aviv, Israel</td></tr>
+      <tr><td data-label="Item">Response time</td><td data-label="Details">Within 14 business days</td></tr>
+    </tbody>
+  </table></div>
+  <p>To help us respond, please describe the problem, the screen where it happened, your device model and iOS version, and the assistive technology you were using.</p>
+</section>
+
+<section id="a8">
+  <h2><span class="num">8.</span>Updates to this statement</h2>
+  <p>This statement was prepared on October 24, 2026 and will be updated with every material change to the App, and at least once a year. Last updated: November 1, 2026.</p>
+  <p class="muted"><a href="#main">Back to top</a></p>
+</section>
+
+</main>
+<footer>
+  <p><a href="en/">Nightfile</a> · <a href="en/support.html">Support</a> · <a href="privacy-policy-en.html">Privacy Policy</a> · <a href="terms-of-use-en.html">Terms of Use</a> · <a href="accessibility-statement-en.html">Accessibility Statement</a></p>
+  <p>Nightfile © 2026 Itzik Lugassy (DIGITAL LAB). All rights reserved.</p>
+  <p>Version 1.0 · Dated October 24, 2026 · Effective November 1, 2026</p>
+</footer>
+</body>
+</html>
